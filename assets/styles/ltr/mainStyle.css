@@ -5,7 +5,9 @@ html, body{
   width: 100%;
   direction: ltr;
 }
-
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
 .contentMargins{
   width:80%;
   float: right;
@@ -175,4 +177,68 @@ html, body{
   border-radius: 100px;
   color: #00AEFF;
   cursor: pointer;
+}
+
+
+.fixedHeader{
+    width:92%;
+    height: 40px;
+    padding: 10px 4%;
+    background: #fff;
+    z-index: 100;
+}
+
+.openNavMenu{
+    height:36px;
+    width: 36px;
+    float: right;
+    border: 2px solid #555;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.openNavMenu img{
+    width: 20px;
+    float: right;
+    margin: 8.5px;
+}
+
+.backButton{
+    width:65px;
+    height: 40px;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    background-image: url('../../icons/backButton.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fixedMenu{
+    top:0;
+    left:0;
+    margin-top: 60px;
+    min-height: 50px;
+    max-height: 300px;
+    width: 100%;
+    position: fixed;
+    background: #555;
+    overflow-x: scroll;
+    opacity: 0.9;
+    display: none;
+    z-index: 90;
+}
+
+.fixedMenu a{
+    width:94%;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 3%;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
 }

@@ -1,0 +1,49 @@
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="../assets/styles/ltr/mainStyle.css" />
+     <link rel="stylesheet" type="text/css" href="../assets/styles/animate.css" />
+      <script src="../assets/js/jq.js"></script>
+      <script src="../assets/js/controller.js" ></script>
+      <title> restaurants list </title>
+  </head>
+  <body>
+
+    <div class="fixedHeader shadow1">
+
+        <div class="openNavMenu">
+            <img src="../assets/icons/b/menu.png" />
+        </div>
+        <script>
+            $(".openNavMenu").click(function(){
+                //flipInX
+                Duanimate($(".fixedMenu"), "toggle", "fadeIn", "0.200");
+                var firstElementShowSpeed = 400;
+                // animate cels
+                $.each( $(".fixedMenu").find("a"), function( i, l ){
+                    firstElementShowSpeed = firstElementShowSpeed + 100;
+                    Duanimate($(this), "none", "slideInUp", "0." + firstElementShowSpeed.toString());
+                });
+            });
+        </script>
+
+        <!-- change # to the prev page link -->
+        <a href="#">
+            <div class="backButton">
+                Back
+            </div>
+        </a>
+
+    </div>
+
+    <!-- the header menu start here  -->
+    <div class="fixedMenu shadow3">
+        <a href="#">hello</a>
+        <a href="#">hello</a>
+        <a href="#">hello</a>
+        <a href="#">hello</a>
+        <a href="#">hello</a>
+    </div>
+    <!-- the header menu end up here  -->
+
+
+  </body>
