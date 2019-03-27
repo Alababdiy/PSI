@@ -249,5 +249,100 @@ a, a:visited, a:hover, a:active {
     position: absolute;
     width:40px;
     height:40px;
+    margin: auto;
+    left:0;
+    right:0;
+}
+
+.cartIcon img{
+    width:30px;
+    margin: 8px 5px;
+    float: right;
+}
+
+.cartIcon .budget{
+    position: absolute;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    background: #EB0E13;
+    border-radius: 100px;
+    border:3px solid #fff;
+    padding:0px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.restaurantInformationsHeader{
+    width: 94%;
+    margin: 10px 3%;
+    height: 80px;
+    padding:20px 0px;
+    background: #00AA60;
+    border-radius: 20px;
+}
+
+.restaurantInformationsHeader .section{
+    width:25%;
+    margin: 0px 4.1%;
+    float: left;
+}
+
+.restaurantInformationsHeader .section .restaurantOpeningTime{
+    width:100%;
+    color: #fff;
+}
+.restaurantInformationsHeader .section .restaurantOpeningTime span{
+    width:100%;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+
+.restaurantInformationsHeader .section .restaurantOpeningTime .heightlight{
+    width:auto;
+    font-size: 12px;
+    font-weight: bold;
     background: #000;
+    padding: 3px 5%;
+    margin-top: 5px;
+    border-radius: 5px;
+    float: left;
+}
+
+.restaurantInformationsHeader .section .expectedDeliverTime{
+    width:100%;
+    float: right;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.restaurantInformationsHeader .section .expectedDeliverTime .minutesLabel{
+    width:100%;
+    float: right;
+    font-size: 18px;
+}
+
+.restaurantInformationsHeader .section .tagsHolder{
+    width: 100%;
+    float: right;
+    text-align: center;
+}
+.restaurantInformationsHeader .section .tagsHolder .lineBetween{
+    width: 100%;
+    float: right;
+    margin-top: 7px;
+}
+.restaurantInformationsHeader .section .tagsHolder .tag{
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 4px;
+    width: auto;
 }

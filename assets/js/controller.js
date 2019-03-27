@@ -1,3 +1,11 @@
+// abstracted item object
+function createCartObj(itemId, name, price, attrs) {
+
+}
+
+
+
+// animation worker
 function Duanimate(TheElement,action,animate,speed){
     speed = speed;
     if(action == "hide"){ action = "none" ;}
