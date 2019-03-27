@@ -86,6 +86,7 @@ a, a:visited, a:hover, a:active {
   float: left;
   width: 23%;
   margin: 0px 1%;
+    min-height: 5px;
 }
 
 .availabilityInfo{
@@ -186,6 +187,7 @@ a, a:visited, a:hover, a:active {
     padding: 10px 4%;
     background: #fff;
     z-index: 100;
+    text-align: center;
 }
 
 .openNavMenu{
@@ -241,4 +243,11 @@ a, a:visited, a:hover, a:active {
     color: #fff;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
+}
+
+.cartIcon{
+    position: absolute;
+    width:40px;
+    height:40px;
+    background: #000;
 }

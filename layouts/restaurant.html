@@ -14,17 +14,22 @@
             <img src="../assets/icons/b/menu.png" />
         </div>
         <script>
+            // menu open and animations
             $(".openNavMenu").click(function(){
                 //flipInX
                 Duanimate($(".fixedMenu"), "toggle", "fadeIn", "0.200");
                 var firstElementShowSpeed = 400;
-                // animate cels
+                // animate cell's
                 $.each( $(".fixedMenu").find("a"), function( i, l ){
                     firstElementShowSpeed = firstElementShowSpeed + 100;
                     Duanimate($(this), "none", "slideInUp", "0." + firstElementShowSpeed.toString());
                 });
             });
         </script>
+
+        <div class="cartIcon">
+
+        </div>
 
         <!-- change # to the prev page link -->
         <a href="#">
